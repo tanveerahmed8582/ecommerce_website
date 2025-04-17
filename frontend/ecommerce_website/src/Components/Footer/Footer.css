@@ -4,6 +4,7 @@
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  background: linear-gradient(180deg, #47fdae, #e1ffea22 60%);
 }
 
 .footer-logo{
