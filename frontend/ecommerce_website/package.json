@@ -1,9 +1,12 @@
 {
   "name": "ecommerce_website",
+  "homepage": "https://tanveerahmed8582.github.io/ecommerce_website",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
