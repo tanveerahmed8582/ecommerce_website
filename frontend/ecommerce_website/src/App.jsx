@@ -1,5 +1,5 @@
 import Navbar from "./Components/Navbar/Navbar";
-import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { Routes, Route } from "react-router-dom";
 import Shop from "./Pages/Shop";
 import ShopCategory from "./Pages/ShopCategory";
@@ -14,7 +14,7 @@ import kids_banner from "./assets/kids_banner.jpg";
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <HashRouter>
         <Navbar />
         <Routes>
           <Route path="/" element={<Shop />} />
@@ -36,7 +36,7 @@ function App() {
           <Route path="/login" element={<LoginSignup />} />
         </Routes>
         <Footer></Footer>
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
